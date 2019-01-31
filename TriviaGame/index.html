@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Disney Trivia Game</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/waltograph" type="text/css"/>
+</head>
+<body background="assets/images/cinderella.jpg">
+  <div class="container">
+    <header class="title">
+      <h1>Disney Trivia Game!</h1>
+      <h3>Time Remaining: <span id="countdown">30</span></h3>
+    </header>
+    <main id="quiz__questions" class="block">
+      <form id="form"></form>
+      <button type="submit" form="form" id="quiz__questions--btn">Check Answers</button>
+    </main>
+    <div id="quiz__results" class="block">
+      <ul>
+        <li>Correct Answers: <span id="correct">0</span></li>
+        <li>Incorrect Answers: <span id="incorrect">0</span></li>
+        <li>Unanswered: <span id="unanswered">0</span></li>
+      </ul>
+    </div>
+  </div>
+<script src="assets/javascript/app.js"></script>
+</body>
+</html>

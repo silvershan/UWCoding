@@ -1,0 +1,39 @@
+.crystals{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.crystal{
+    border: 1px solid green;
+    height: 200px;
+    width: 200px;
+    border-radius: 4px;
+}
+
+
+img{
+    width: 50px;
+}
+
+p#result {
+    padding: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+p#previous, p#win, p#lost{
+    font-size: 20px;
+}
+
+p#previous {
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+html {
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}

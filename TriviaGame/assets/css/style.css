@@ -1,0 +1,60 @@
+html {
+    background: #f2cad7;
+}
+
+header.title {
+        font-family: 'WaltographRegular'; 
+        font-weight: normal; 
+        font-style: normal; 
+        font-size: 20px;
+
+}
+
+body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+h1 {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+h3 {
+    padding: 20px;
+    margin-left: 200px;
+}
+
+main#quiz__questions.block {
+    margin-top: 50px;
+    margin-left: 550px;
+}
+
+form#form {
+    padding: 10px;
+}
+
+button#quiz__questions--btn {
+    margin-top: 20px;
+}
+
+section.quiz__questions--question.q0, section.quiz__questions--question.q1, section.quiz__questions--question.q2, section.quiz__questions--question.q3 {
+    margin-bottom: 20px;
+    letter-spacing: 1px; 
+}
+
+div#quiz__results.block {
+    text-align: center;
+
+}
+
+li {
+    padding: 20px;
+}
+  
