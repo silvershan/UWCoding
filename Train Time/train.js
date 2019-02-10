@@ -10,10 +10,11 @@ var config = {
 
   var trainData = firebase.database();
 
-  $("#addTrainBtn").on("click",function(){
+  $("#submit").on("click",function(event){
+        event.preventDefault();
         var trainName = $("#trainNameForm").val().trim();
         var destination = $("#destination").val().trim();
-        var firstTrain = moment($("#firstTrain").val().trim(), "HH:mm").sutract(10,"years").format("X");
+        var firstTrain = moment($("#firstTrain").val().trim(), "HH:mm").subtract(10,"years").format("X");
         var frequency = $("#frequency").val().trim();
 
         var newTrain = {
@@ -47,6 +48,9 @@ var config = {
       var minutes = frequency - remainder;
       var arrival = moment().add(minutes, "m").format("hh:mm A");
 
-      $("#trainTable > tBody").append("<tr><td>" + name + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + arrival + "</td><td>" + minutes + "</td></tr>");
-  })
+      console.log(remainder);
+      console.log(minutes);
+      console.log(arrival);
 
+      $("#trainTable > tBody").append("<tr><td>"+name+"</td><td>"+destination+"</td><td>"+frequency+"</td><td>"+arrival+"</td><td>"+minutes+"</td></tr>");
+  })
